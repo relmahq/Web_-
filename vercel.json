@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs20.x",
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    { "src": "/api/proxy", "dest": "/api/api_proxy.js" },
+    { "src": "/proxy", "dest": "/api/api_proxy.js" }
+  ]
+}
